@@ -48,9 +48,7 @@ class MainActivity : ComponentActivity() {
 fun Quadrant(modifier: Modifier = Modifier) {
     Row(modifier = modifier.fillMaxSize())
     {
-        Column(modifier = modifier
-            .fillMaxHeight()
-            .fillMaxWidth(0.5f))
+        Column(modifier = modifier.weight(1f))
         {
             CardView(color = Color(0xFFEADDFF),
                 name = stringResource(R.string.text_composable_name),
@@ -64,9 +62,7 @@ fun Quadrant(modifier: Modifier = Modifier) {
             )
         }
 
-        Column(modifier = modifier
-            .fillMaxHeight()
-            .fillMaxWidth())
+        Column(modifier = modifier.weight(1f))
         {
                 CardView(color = Color(0xFFD0BCFF),
                     name = stringResource(R.string.image_composable_name),
